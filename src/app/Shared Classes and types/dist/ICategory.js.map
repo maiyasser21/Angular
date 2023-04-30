@@ -1,0 +1,1 @@
+{"version":3,"sources":["ICategory.ts"],"names":[],"mappings":"","file":"ICategory.js","sourcesContent":["export interface ICategory\r\n{\r\n  id:number,\r\n  name:string,\r\n}\r\n"]}

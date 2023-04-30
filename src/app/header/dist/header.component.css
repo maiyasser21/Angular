@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+nav a.navbar-brand {
+  font-size: 1.5rem;
+}
+
+nav .navbar-nav {
+  margin-left: auto;
+}
+
+nav .navbar-nav .nav-item a.nav-link {
+  color: orangered;
+}
+
+nav .navbar-nav .nav-item a.nav-link:hover {
+  color: black;
+}
+
+#myId2 {
+  color: #007bff;
+}
+
+/*# sourceMappingURL=header.component.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sources":["DiscountOffers.ts"],"names":[],"mappings":";;AAAA,IAAY,cAKX;AALD,WAAY,cAAc;IAExB,2CAAuB,CAAA;IACvB,iEAAc,CAAA;IACd,0EAAmB,CAAA;AACrB,CAAC,EALW,cAAc,GAAd,sBAAc,KAAd,sBAAc,QAKzB","file":"DiscountOffers.js","sourcesContent":["export enum DiscountOffers\r\n{\r\n  noDiscount=\"NoDiscount\",\r\n  tenpercent=0.1,\r\n  fifteenpercent=0.15,\r\n}\r\n"]}

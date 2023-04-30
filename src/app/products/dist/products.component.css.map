@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["products.component.scss"],"sourcesContent":["h1{\r\n  text-align: center;\r\n}\r\n\r\nh1 span{\r\n  color: orangered;\r\n}\r\n\r\n"],"file":"products.component.css"}

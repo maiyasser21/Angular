@@ -1,0 +1,32 @@
+<h1>Welcome To <span>{{ storeName | uppercase }}</span></h1>
+<h3 *ngIf="discount !== 'NoDiscount'">
+  We Offer an Explicit Discount of <span style="color: orangered;">{{ discount | percent}}</span>
+</h3>
+
+<select>
+  <option *ngFor="let category of categoryList">{{ category.name }}</option>
+</select>
+
+<input [(ngModel)]="clientName" placeholder="Enter your name" />
+<button (click)="buy()">Buy</button>
+<ng-container *ngIf="!isPurchased; else thankyou">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productList">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+</ng-container>
+<ng-template #thankyou>
+  <div>Thanks for purchasing from our store, {{ clientName }}!</div>
+</ng-template>

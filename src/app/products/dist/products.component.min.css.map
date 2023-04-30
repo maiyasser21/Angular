@@ -1,0 +1,1 @@
+{"version":3,"sources":["products.component.scss"],"names":[],"mappings":"AAAA,GACE,WAAY,OAGd,QACE,MAAO","file":"products.component.min.css","sourcesContent":["h1{\r\n  text-align: center;\r\n}\r\n\r\nh1 span{\r\n  color: orangered;\r\n}\r\n\r\n"]}

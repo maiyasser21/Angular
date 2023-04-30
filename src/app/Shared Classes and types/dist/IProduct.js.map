@@ -1,0 +1,1 @@
+{"version":3,"sources":["IProduct.ts"],"names":[],"mappings":"","file":"IProduct.js","sourcesContent":["export interface IProduct\r\n{\r\n  id:number,\r\n  name:string,\r\n  quantity:number,\r\n  price:number,\r\n  img:string,\r\n}\r\n"]}
