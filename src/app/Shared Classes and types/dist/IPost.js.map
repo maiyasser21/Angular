@@ -1,0 +1,1 @@
+{"version":3,"sources":["IPost.ts"],"names":[],"mappings":"","file":"IPost.js","sourcesContent":["export interface IPost{\r\n  id:number;\r\n  title:string;\r\n  body:string;\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["footer.component.scss"],"names":[],"mappings":"AAAA,OACE,SAAU,MACV,OAAQ,EACR,MAAO","file":"footer.component.min.css","sourcesContent":["footer{\r\n  position: fixed;\r\n  bottom: 0;\r\n  width: 100vw;\r\n}\r\n"]}

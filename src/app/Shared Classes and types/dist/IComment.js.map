@@ -1,0 +1,1 @@
+{"version":3,"sources":["IComment.ts"],"names":[],"mappings":"","file":"IComment.js","sourcesContent":["export interface IComment{\r\n  postId:number;\r\n  id:number;\r\n  name:string;\r\n  email:string;\r\n  body:string;\r\n}\r\n"]}

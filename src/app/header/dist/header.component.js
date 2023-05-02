@@ -8,16 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 var core_1 = require("@angular/core");
 require("bootstrap");
-var products_component_1 = require("../products/products.component");
 var HeaderComponent = /** @class */ (function () {
     function HeaderComponent() {
         this.textId = "myId2";
     }
     HeaderComponent.prototype.ngOnInit = function () {
     };
-    __decorate([
-        core_1.ViewChild(products_component_1.ProductsComponent)
-    ], HeaderComponent.prototype, "storeName");
     HeaderComponent = __decorate([
         core_1.Component({
             selector: 'app-header',

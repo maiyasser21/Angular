@@ -14,29 +14,6 @@ var ProductsComponent = /** @class */ (function () {
         this.discount = DiscountOffers_1.DiscountOffers.tenpercent;
         this.storeName = 'Meow Store';
         this.storeLogo = './assets/img.jpg';
-        // this.productList=[
-        //   {
-        //     id:1,
-        //     img:'./assets/img.jpg',
-        //     name:'Phone',
-        //     price:200,
-        //     quantity:2,
-        //   },
-        //   {
-        //     id:2,
-        //     img:'./assets/img.jpg',
-        //     name:'iPad',
-        //     price:500,
-        //     quantity:3,
-        //   },
-        //   {
-        //     id:3,
-        //     img:'./assets/img.jpg',
-        //     name:'Sports Wear',
-        //     price:20,
-        //     quantity:20,
-        //   },
-        // ];
         this.categoryList = [
             {
                 id: 1,

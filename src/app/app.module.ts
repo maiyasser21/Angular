@@ -10,6 +10,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsComponent } from './products/products.component';
 import { FormsModule } from '@angular/forms';
+import { UsersComponent } from './users/users.component';
+import { PostsComponent } from './posts/posts.component';
+import { HomeComponent } from './home/home.component';
+import { ProductswithdiscountComponent } from './productswithdiscount/productswithdiscount.component';
+import { ProductnodiscountComponent } from './productnodiscount/productnodiscount.component';
+import { CommentsComponent } from './comments/comments.component';
+import { PostcommentsComponent } from './postcomments/postcomments.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 @NgModule({
@@ -18,7 +26,15 @@ import { FormsModule } from '@angular/forms';
     FirstcompComponent,
     HeaderComponent,
     FooterComponent,
-    ProductsComponent
+    ProductsComponent,
+    UsersComponent,
+    PostsComponent,
+    HomeComponent,
+    ProductswithdiscountComponent,
+    ProductnodiscountComponent,
+    CommentsComponent,
+    PostcommentsComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
