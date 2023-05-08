@@ -17,6 +17,8 @@ var productswithdiscount_component_1 = require("./productswithdiscount/productsw
 var productnodiscount_component_1 = require("./productnodiscount/productnodiscount.component");
 var postcomments_component_1 = require("./postcomments/postcomments.component");
 var pagenotfound_component_1 = require("./pagenotfound/pagenotfound.component");
+var registeration_component_1 = require("./registeration/registeration.component");
+var login_component_1 = require("./login/login.component");
 var routes = [
     { path: '', component: home_component_1.HomeComponent },
     {
@@ -40,6 +42,8 @@ var routes = [
         component: postcomments_component_1.PostcommentsComponent,
         children: [{ path: 'comments', component: comments_component_1.CommentsComponent }]
     },
+    { path: 'register', component: registeration_component_1.RegisterationComponent },
+    { path: 'login', component: login_component_1.LoginComponent },
     { path: '**', component: pagenotfound_component_1.PagenotfoundComponent },
 ];
 var AppRoutingModule = /** @class */ (function () {

@@ -1,0 +1,77 @@
+<form [formGroup]="registerationform">
+  <div class="mb-3" class="form-group">
+    <label for="username" class="form-label">Username</label>
+    <input
+      [class.is-invalid]="userName?.invalid && userName?.touched"
+      formControlName="username"
+      type="text"
+      class="form-control"
+      id="username"
+      placeholder="Enter username"
+    />
+    <div *ngIf="userName?.invalid && userName?.touched">
+      <small class="text-danger" *ngIf="userName?.errors?.['required']"
+        >User Name is required</small
+      >
+      <small class="text-danger" *ngIf="userName?.errors?.['minlength']"
+        >Minimum length must be 5 characters</small
+      >
+      <small class="text-danger" *ngIf="userName?.errors?.['forbiddenName']"
+        >Admin or Administrator are not allowed as username</small
+      >
+    </div>
+  </div>
+  <div class="mb-3" class="form-group">
+    <label for="password" class="form-label">Password</label>
+    <input
+      [class.is-invalid]="
+        registerationform.get('password')?.invalid &&
+        registerationform.get('password')?.touched
+      "
+      formControlName="password"
+      type="password"
+      class="form-control"
+      id="password"
+      placeholder="Enter password"
+    />
+    <div
+      *ngIf="
+        registerationform.get('password')?.invalid &&
+        registerationform.get('password')?.touched
+      "
+    >
+      <small
+        class="text-danger"
+        *ngIf="registerationform.get('password')?.errors?.['required']"
+        >Password is required</small
+      >
+      <small
+        class="text-danger"
+        *ngIf="registerationform.get('password')?.errors?.['minlength']"
+        >Minimum length must be 8 characters</small
+      >
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email Address</label>
+    <input
+      [class.is-invalid]="email?.invalid && email?.touched"
+      formControlName="email"
+      type="email"
+      class="form-control"
+      id="email"
+      placeholder="Enter email"
+      required
+    />
+    <div *ngIf="email?.invalid && email?.touched">
+      <small class="text-danger" *ngIf="email?.errors?.['required']"
+        >Email is Required</small
+      >
+      <small class="text-danger" *ngIf="email?.errors?.['pattern']"
+        >Email format is invalid (aaa@bb.com)
+      </small>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>

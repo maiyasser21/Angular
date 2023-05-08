@@ -9,6 +9,8 @@ import { ProductswithdiscountComponent } from './productswithdiscount/productswi
 import { ProductnodiscountComponent } from './productnodiscount/productnodiscount.component';
 import { PostcommentsComponent } from './postcomments/postcomments.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { RegisterationComponent } from './registeration/registeration.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -33,6 +35,9 @@ const routes: Routes = [
     component: PostcommentsComponent,
     children: [{ path: 'comments', component: CommentsComponent }],
   },
+  {path:'register',component:RegisterationComponent},
+
+  {path:'login',component:LoginComponent},
   { path: '**', component:PagenotfoundComponent },
 ];
 

@@ -17,6 +17,16 @@ var header_component_1 = require("./header/header.component");
 var footer_component_1 = require("./footer/footer.component");
 var products_component_1 = require("./products/products.component");
 var forms_1 = require("@angular/forms");
+var users_component_1 = require("./users/users.component");
+var posts_component_1 = require("./posts/posts.component");
+var home_component_1 = require("./home/home.component");
+var productswithdiscount_component_1 = require("./productswithdiscount/productswithdiscount.component");
+var productnodiscount_component_1 = require("./productnodiscount/productnodiscount.component");
+var comments_component_1 = require("./comments/comments.component");
+var postcomments_component_1 = require("./postcomments/postcomments.component");
+var pagenotfound_component_1 = require("./pagenotfound/pagenotfound.component");
+var registeration_component_1 = require("./registeration/registeration.component");
+var login_component_1 = require("./login/login.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -27,13 +37,25 @@ var AppModule = /** @class */ (function () {
                 firstcomp_component_1.FirstcompComponent,
                 header_component_1.HeaderComponent,
                 footer_component_1.FooterComponent,
-                products_component_1.ProductsComponent
+                products_component_1.ProductsComponent,
+                users_component_1.UsersComponent,
+                posts_component_1.PostsComponent,
+                home_component_1.HomeComponent,
+                productswithdiscount_component_1.ProductswithdiscountComponent,
+                productnodiscount_component_1.ProductnodiscountComponent,
+                comments_component_1.CommentsComponent,
+                postcomments_component_1.PostcommentsComponent,
+                pagenotfound_component_1.PagenotfoundComponent,
+                registeration_component_1.RegisterationComponent,
+                login_component_1.LoginComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
                 app_routing_module_1.AppRoutingModule,
                 ng_bootstrap_1.NgbModule,
-                forms_1.FormsModule, http_1.HttpClientModule
+                forms_1.FormsModule,
+                http_1.HttpClientModule,
+                forms_1.ReactiveFormsModule,
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]

@@ -9,7 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsComponent } from './products/products.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +18,8 @@ import { ProductnodiscountComponent } from './productnodiscount/productnodiscoun
 import { CommentsComponent } from './comments/comments.component';
 import { PostcommentsComponent } from './postcomments/postcomments.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { RegisterationComponent } from './registeration/registeration.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -34,13 +36,17 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     ProductnodiscountComponent,
     CommentsComponent,
     PostcommentsComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    RegisterationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule,HttpClientModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
